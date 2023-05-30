@@ -1,0 +1,23 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+.navbar {
+    background: #21222A;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+    .nav-react-logo {
+        width: 10%;
+    }
+    .nav-h3 {
+        color: #61DAFB;
+    }
+    .nav-h4 {
+        color: #DEEBF8;
+    }
