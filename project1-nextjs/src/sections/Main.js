@@ -1,7 +1,5 @@
-import React from 'react';
-
 export default function Main() {
-    return (
+    return(
         <main>
             <h1>Reasons why I am studying React</h1>
             <ol>
