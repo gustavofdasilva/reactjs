@@ -1,0 +1,55 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+.nav {
+    background: #21222A;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1.5em 2em;
+}
+    .nav--react-logo {
+        width: 6%;
+        margin-right: 12px;
+    }
+    .nav--h3 {
+        color: #61DAFB;
+        font-size: 22px;
+        margin-right: auto;
+    }
+    .nav--h4 {
+        color: #DEEBF8;
+        font-size: 16px;
+    }
+
+
+.main { 
+    height: 85vh;
+    background-color: #282D35;
+    background-image: url(./images/reactLogoBg.png);
+        background-size: 240px;
+        background-repeat: no-repeat;
+        background-position: right;
+    color: #FFF;
+}
+    .main--title {
+        font-size: 39px;
+        padding: 1.5em 0 1em 1.2em;
+    }
+    .main--list {
+        padding-left: 5em;
+        width: 70%;
+    }
+    .main--list-item {
+        margin-bottom: 1.2em;
+    }
+        .main--list-item::marker {
+            color: #61DAFB;
+            font-size: 1.5em;
+        }
