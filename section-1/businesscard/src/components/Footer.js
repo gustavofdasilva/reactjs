@@ -1,15 +1,23 @@
 import React from "react";
+import {ReactComponent as Twitter} from "../images/icons/twitter.svg"
+import {ReactComponent as Facebook} from "../images/icons/facebook.svg"
+import {ReactComponent as Instagram} from "../images/icons/instagram.svg"
+import {ReactComponent as GitHub} from "../images/icons/github.svg"
+
 export default function Footer() {
     return(
         <div className="footer">
-            <a href="#" className="pinterest">
-                <img src="#" className="pinterest-img"/>
+            <a href="#" className="twitter">
+                <Twitter className="icon twitter-img"/>
+            </a>
+            <a href="#" className="facebook">
+                <Facebook className="icon facebook-img"/>
             </a>
             <a href="#" className="instagram">
-                <img src="#" className="instagram-img"/>
+                <Instagram className="icon instagram-img"/>
             </a>
             <a href="#" className="github">
-                <img src="#" className="github-img"/>
+                <GitHub className="icon github-img"/>
             </a>
         </div>
     )
