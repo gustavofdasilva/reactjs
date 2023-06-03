@@ -1,19 +1,23 @@
 import React from "react";
 import star from "../images/icons/star.png";
-export default function Card() {
+
+
+export default function Card(props) {
     return(
         <div className="cards">
             <div className="card">
-                <div className="card--image">
+                <div className="card--image" style={{
+                    backgroundImage: `url(../images/${props.img})`
+                }}>
                     <small className="card--image-info">Sold out</small>
                 </div>
                 <div className="card--rate">
                     <img className="card--rate-star" src={star}/>
-                    <aside className="card--rate-grade">5.0</aside>
-                    <small className="card--rate-description">(6) • USA</small>
+                    <aside className="card--rate-grade">{props.rating}</aside>
+                    <small className="card--rate-description">({props.reviewCount}) • {props.country}</small>
                 </div>
-                <p className="card--description">Life lessons with Katie Zaferes</p>
-                <aside className="card--price"><strong>From $136</strong> / person</aside>
+                <p className="card--description">{props.title}</p>
+                <aside className="card--price"><strong>From ${props.price}</strong> / person</aside>
             </div>
         </div>
     )

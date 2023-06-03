@@ -51,7 +51,6 @@
     }
         .card--image {
             height: 235px;
-            background-image: url(./images/card-photo.png);
                 background-size: cover;
                 background-position: 20%;  
             padding: 10px 0 0 10px;

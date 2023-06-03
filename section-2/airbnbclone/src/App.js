@@ -7,7 +7,13 @@ export default function App() {
         <div>
             <Navbar/>
             <Hero/>
-            <Card/>
+            <Card
+                img="card-photo.png"
+                rating="5.0"
+                reviewCount={6}
+                country="BRA"
+                title="Life Lessons  with Katie Zaferes"
+                price={136}/>
         </div>
     )
 }
