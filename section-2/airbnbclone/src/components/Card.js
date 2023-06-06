@@ -1,15 +1,16 @@
 import React from "react";
 import star from "../images/icons/star.png";
 
-
 export default function Card(props) {
     return(
         <div className="cards">
             <div className="card">
                 <div className="card--image" style={{
-                    backgroundImage: `url(../images/${props.img})`
+                    backgroundImage: `url(${props.img})`
                 }}>
-                    <small className="card--image-info">Sold out</small>
+                    <small className="card--image-info" style={{
+                        display: props.status == null ? "none" : "block"
+                    }}>{props.status}</small>
                 </div>
                 <div className="card--rate">
                     <img className="card--rate-star" src={star}/>
